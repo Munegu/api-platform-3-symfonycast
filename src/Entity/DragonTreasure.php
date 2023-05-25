@@ -26,7 +26,8 @@ use function Symfony\Component\String\u;
 #[ORM\Entity(repositoryClass: DragonTreasureRepository::class)]
 #[ApiResource(
     shortName: 'Treasure',
-    description: 'A rare and valuable treasure.', operations: [
+    description: 'A rare and valuable treasure.',
+    operations: [
         new Get(),
         new GetCollection(),
         new Post(),
